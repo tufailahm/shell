@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<script type="text/javascript">
+	function validate() {
+		var uname = document.getElementById("txtUserName").value
+	//	var uname1 = document.forms[0].elements[0].value;
+		var password1 = document.getElementById("txtPassword").value
+		var password2 = document.getElementById("txtPassword2").value
+		var err1 = document.getElementById("err1");
+
+		if(uname.length ==0){
+			err1.innerHTML = "<font color=red>Please enter your username";
+				return false;
+		}
+		else if (password1.length == 0){
+			alert("Please enter your password")
+			return false;
+		}
+		else if (password2.length == 0){
+			alert("Please enter your confirm password")
+			return false;
+		}
+		else {
+			alert("Welcome :"+uname);
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<form action="index.html" onsubmit="return validate()" name="shellform">
+		<table>
+			<tr>
+				<td>** User Name : </td>
+				<td><input type="text" id="txtUserName" name="username"></td>
+				<td><span id="err1"></span></td>
+			</tr>
+
+			<tr>
+				<td>* Password </td>
+				<td>
+					<input type="password" id="txtPassword">
+				</td>
+			</tr>
+
+			<tr>
+				<td>* Confirm Password </td>
+				<td>
+					<input type="password" id="txtPassword2">
+				</td>
+			</tr>
+
+
+			<tr>
+				<td><input type="submit" value="Login"></td>
+				<td><input type="reset" ></td>
+			</tr>
+			<tr>
+				
+			</tr>
+		</table>
+	</form>
+
+	<div id="demo">
+		H
+	</div>
+
+	<span id="demo1">
+		HH
+	</span>
+</body>
+
+</html>

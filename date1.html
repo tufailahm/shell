@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <script>
+        var today = new Date();		//2nd Sep 2022
+        var lastdate = new Date();	//2nd Sep 2022
+        lastdate.setFullYear(2022, 10, 30);//30th Nov 2022
+        if (lastdate > today) {
+            var day = 1000 * 60 * 60 * 24;
+            x = (lastdate - today) / day;
+            alert("Number of days left " + x);
+        }
+        else {
+            alert("time up and you cannot apply for interview");
+        }
+    </script>
+</body>
+
+</html>
+</html>
